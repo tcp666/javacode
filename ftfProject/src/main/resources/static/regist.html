@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Letter - Simple Sign Up Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<ul class="cb-slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<div class="container-fluid">
+    <div class="row cb-slideshow-text-container ">
+        <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+            <header class="mb-5"><h1>注册页面</h1></header>
+            <form action="/user" method="get" class="subscribe-form">
+                <div class="row form-section">
+                    <div class="col-md-7 col-sm-7 col-xs-7">
+                        <input name="username" type="text" class="form-control" id="username" placeholder="用户名"
+                               required/>
+                        <input name="password" type="password" class="form-control" id="password" placeholder="密码"
+                               required/>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="邮箱地址"
+                               required/>
+                        <input type="text" placeholder="请输入验证码" class="form-control" id="checkcode" required><span
+                            id="tip"></span>
+                        <input type="button" class="form-control" id="sendcheckcode" value="点击发送验证码" required>
+                        <br>
+                        <button type="button" class="tm-btn-subscribe" name="regist" id="regist">注册</button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <div class="footer-link">
+        <p>Copyright © 2018 Your Company</p>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    var result = "";
+    $("#sendcheckcode").click(function () {
+        var uemail = $("#email").val();
+        var uname = $("#username").val();
+        var upass = $("#password").val();
+        $.ajax({
+            url: "emailCheckServlet",
+            data: {email: uemail, username: uname, password: upass},
+            dataType: "text",
+            success: function (data) {
+                result = data;
+            },
+            error: function () {
+
+            }
+        });
+    })
+    $("#regist").click(function () {
+        var uemail = $("#email").val();
+        var uname = $("#username").val();
+        var upass = $("#password").val();
+        var code = $("#checkcode").val();
+        if (code != result) {
+            alert("验证码有误");
+        }
+        else
+            alert(code);
+
+        if (uemail != null && uemail != null && upass != null)
+            $.ajax({
+                url: "registServlet",
+                data: {email: uemail, username: uname, password: upass},
+                dataType: "text",
+                success: function (data) {
+
+                },
+                error: function (data) {
+
+                },
+            });
+        else alert("表单不完整")
+    })
+</script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</html>

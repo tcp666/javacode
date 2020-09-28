@@ -1,0 +1,28 @@
+ 驱动器 D 中的卷是 Data
+ 卷的序列号是 2404-97EA
+
+ D:\SpringDemos\javacode\junit\target\classes\jianzhioffer 的目录
+
+2020/08/12  01:56    <DIR>          .
+2020/08/12  01:56    <DIR>          ..
+2020/08/12  01:56                 0 1.txt
+2020/08/12  01:54    <DIR>          Arr
+2020/08/08  21:42             1,772 AVLTreeDemo.class
+2020/08/07  01:29               512 Demo1$ListNode.class
+2020/08/07  01:29             2,831 Demo1.class
+2020/08/09  17:50               528 Demo2$TreeNode.class
+2020/08/09  17:50             5,081 Demo2.class
+2020/08/10  18:10    <DIR>          dp
+2020/08/12  01:54    <DIR>          grpg
+2020/08/08  21:28             1,784 LRUCache.class
+2020/08/08  22:12               552 Soluation$TreeNode.class
+2020/08/08  22:12            11,840 Soluation.class
+2020/08/06  15:05               662 Soluation1$ListNode.class
+2020/08/06  15:05             3,549 Soluation1.class
+2020/08/06  15:05               411 Soluation1Test.class
+2020/08/08  21:28             1,151 Solution2.class
+2020/08/12  01:54               700 ThreadDemo.class
+2020/08/09  22:27    <DIR>          treeDemo
+2020/08/08  21:42             1,347 TreeNode.class
+              15 个文件         32,720 字节
+               6 个目录 679,643,795,456 可用字节

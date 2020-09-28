@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评论回复</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box {
+            width: 800px;
+            border: 1px solid #cccccc;
+            margin: 100px auto;
+            padding: 30px;
+        }
+
+        #my_textarea {
+            width: 80%;
+            height: 150px;
+        }
+
+        .box-top {
+            margin-bottom: 30px;
+        }
+
+        #reply {
+            margin: 0 80px;
+        }
+
+        #reply li {
+            border-bottom: 1px dashed #cccccc;
+            color: red;
+            line-height: 44px;
+        }
+
+        #reply li a {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="box-top">
+        <label>发表评论:</label>
+        <textarea id="my_textarea"></textarea>
+        <button id="comment">发表</button>
+    </div>
+    <ul id="reply">
+    </ul>
+</div>
+<script>
+    window.onload = function () {
+        //封装id获取操作
+        function $(id) {
+            return typeof id === "string" ? document.getElementById(id) : null;
+        }
+
+        //发表按钮点击
+        $("comment").onclick = function () {
+            //获取输入的内容
+            var content = $("my_textarea").value;
+            //判断为空
+            if (content.length === 0) {
+                alert("请输入评论的内容!");
+                return;
+            } else {
+                var li = document.createElement("li");
+                li.innerHTML = content + '<a href = "Javascript:;">删除</a>';//动态处理a标签
+                $("reply").appendChild(li);//在ul中添加li
+                //清除输入框
+                $("my_textarea").value = "";
+            }
+
+            //删  除操作
+            //获取li中所有链接a元素
+            var liList = $("reply").getElementsByTagName("a");
+            //遍历拿到每个"删除"标签
+            for (var i = 0; i < liList.length; i++) {
+                var a = liList[i];
+                a.onclick = function () {
+                    //删除父元素li
+                    this.parentNode.remove();
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

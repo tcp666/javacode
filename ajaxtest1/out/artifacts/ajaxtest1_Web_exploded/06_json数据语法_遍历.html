@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        //1,定义基本格式
+        var person = {"name": "lijie", "age": 23, gender: true};
+
+        var persons = {
+            persons:
+                [
+                    {name: "lijie", age: 23, gender: true},
+                    {name: "lhuhuu", age: 23, gender: true},
+                    {name: "rose", age: 24, gender: false},
+                    {name: "root", age: 29, gender: true}
+                ]
+        };
+
+
+
+        // 3,嵌套
+        var ps = [
+            {name: "zhao", age: 23, gender: true},
+            {name: "qian", age: 23, gender: true},
+            {name: "sun", age: 24, gender: false},
+            {name: "li", age: 29, gender: true}
+        ];
+
+        alert(ps.length);
+
+
+      for ( var i=0;i<ps.length;i++){
+          p=ps[i];
+          for (var  key in p){
+              alert(key+":"+p[key]) ;
+          }
+      }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

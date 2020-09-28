@@ -1,0 +1,40 @@
+javascript Object Notation javascrit对象表示法
+
+
+json语法
+    1，基本规则
+        数据由键值对构成
+        值：数字，“字符串”，
+        逗号分隔
+        {}保存对象
+        []表示数组
+        对象{
+        “address":{
+        "key":"value"
+        }
+        }
+        null
+    2，获取数据
+        1,jsonOBJ.keyname
+        2j,sonOBJ["keyname"]
+        3,数组对象[索引]
+    3,json和Java对象相互转换
+       *json:解析器jsonlib,Gson,fastjson,jackson
+
+        1,json-->javaobj
+        rea
+
+
+        2,javaobj-->json
+            1使用步骤
+                1，jar包
+                2，java对象
+                3，核心对象:ObjectMapper
+                3,调用相关方法
+
+                注解：
+
+                3,复杂转化
+
+
+

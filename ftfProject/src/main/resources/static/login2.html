@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Letter - Simple Sign Up Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <script>
+        onload=function (ev) {
+            var divs=document.getElementsByTagName("div");
+            for (var i=0;i<divs.length;i++)
+             console.log(divs[i].offsetLeft+pageXOffset);
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container-fluid">
+    <div class="row cb-slideshow-text-container ">
+        <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+
+            <form action="#" method="get" class="subscribe-form">
+                <div class="row form-section">
+
+
+                    <div class="container-fluid">
+                        <div class="row cb-slideshow-text-container ">
+                            <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+                                <header class="mb-5"><h1>face to face</h1></header>
+                                <P class="mb-5">如果希望成为善于谈话的人</P>
+                                <P class="mb-5">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    那就先做一个致意倾听的人</P>
+
+                                <form action="#" method="get" class="subscribe-form" >
+                                    <div class="row form-section" style="position: absolute;right: 50%">
+
+                                        <div class="col-md-7 col-sm-7 col-xs-7" >
+                                            <input type="text" class="form-control" name="username"
+                                                   id="contact_username" placeholder="username" required/>
+                                            <input type="password" class="form-control" name="password"
+                                                   id="contact_password" placeholder="password" required/>
+                                            <br>
+
+                                            <button class="tm-btn-subscribe" type="button"
+                                                    onclick="window.location.href='forget-password.html'">忘记密码？
+                                            </button>
+
+
+                                        </div>
+                                        <div class="col-md-5 col-sm-5 col-xs-5 in-btn-location" >
+                                            <!--								<br><br><br>-->
+                                            <button type="submit" class="tm-btn-subscribe" id="login">登 陆
+                                            </button>
+                                            <button type="button" class="tm-btn-subscribe"
+                                                    onclick="window.location.href='regist.html'">注 册
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <div class="footer-link">
+        <p>Copyright © 2019 软件1701</p>
+
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $("#contact_username").blur(function () {
+        var username=  $("#contact_username").val();
+        if (!(/[a-z0-9A-Z]{6,16}$/.test(username))){
+            $("#contact_username").val("用户名格式错");
+            $("#contact_username").focus();
+        }
+    })
+    $("#contact_password").blur(function () {
+        var pass=  $("#contact_password").val();
+       if (""==pass)
+           $("#contact_password").val("密码不能为空");
+
+    })
+    $("#login").click(function () {
+        var name=  $("#contact_username").val();
+        var pass=  $("#contact_password").val();
+        $.ajax({
+            type:"POST",
+            data:{username:name,password:pass},
+            url:"loginServlet",
+            dataType:"JSON",
+            error:function (data) {
+                alert(data+"eero");
+            }
+        })
+    })
+</script>
+
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</html>

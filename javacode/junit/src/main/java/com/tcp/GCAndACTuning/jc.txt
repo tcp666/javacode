@@ -1,0 +1,35 @@
+1.什么是垃圾
+    C语言申请内存: malloc free
+    C++:new delete
+    Java:new ?
+    自动内存回收，编程上简单，系统不容易出错，手动释放内存，容易出两种类型的问题:
+    1.忘记回收
+    2.多次回收
+    没有任何引用指向的一个对象或者多个对貌(循环引用)
+2,如何定位垃圾：
+
+    1，引用计数，
+    不能定位（循环引用会出问题）;
+    2,根可达算法 Root Searching
+        根找不到的都是垃圾
+        root（根对象）:
+        线程栈变量
+        静态变量
+        常量池
+        ****************
+    JVM
+    stack,
+    native method stack,
+    runtime constant pool ,
+    static references in method area,
+    Clazz
+2,常见的垃圾回收算法：
+    1，标记清除，Mark-Sweep
+        位置不连续，容易产生碎片
+    2，拷贝算法Copying:
+        浪费空间，没有碎片
+    3，标记压缩算法Mark-Compact：
+
+
+
+

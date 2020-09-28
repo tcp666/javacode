@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(function () {
+
+            //
+            $("#username").blur(function () {
+                var username = $(this).val();
+                // 期望服务器回来的格式：{"userExist":true,"msg":"用户名太受欢迎，请换一个"}
+                $.get("findUserServlet", {username: username}, function (data) {
+
+                    //判断userExist的值是否true
+                    var span = $("#username_span");
+                    if (data.userExist) {
+                        //用户名存在
+                        span.css("color", "red");
+                        span.html(data.msg);
+
+                    } else {
+                        span.css("color", "green");
+                        span.html(data.msg);
+
+                    }
+
+
+                })
+            })
+
+        })
+    </script>
+</head>
+<body>
+
+<div>
+
+    <form action="findUserServlet">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="username" name="username" placeholder="请输入用户名">
+                    <span id="username_span">
+                    </span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="请输入密码">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" placeholder="注册">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+</body>
+</html>

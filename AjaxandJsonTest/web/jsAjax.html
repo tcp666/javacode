@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fun() {
+            var xmlhttp;
+            if (window.XMLHttpRequest){
+                xmlhttp=new XMLHttpRequest();
+            }
+            else {
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            //建立链接
+            // 发送    方式     路径      是否异步
+         xmlhttp.open("GET","ajaxServlet?username=tom",true);
+         xmlhttp.send();
+         // 获取方式
+         //    响应成功在获取
+         //    xmlhttp.responseText
+
+            xmlhttp.onreadystatechange=function (){
+                if (xmlhttp.readyState==4&&xmlhttp.status==200){
+document.getElementById("div").innerHTML="<h2>"+xmlhttp.responseText+"</h2>"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="发送异步请求" onclick="fun()"><br>
+<input type="text">
+<div id="div">
+
+</div>
+</body>
+</html>

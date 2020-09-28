@@ -1,0 +1,52 @@
+范伯鹏
+188-2950-5503 | fbopeng@163.com | 西安
+微信：f1197624853 | https://github.com/FanBopeng
+2020届 | 求职意向：后台研发工程师
+专业技能
+具备扎实的Java基础,熟悉Java多线程,深入理解OOP编程思想,熟悉常用设计模式
+熟悉常用数据结构与算法
+熟悉java网络编程,熟悉netty
+熟悉Java内存模型和jvm内存模型,掌握常用jvm性能调优策略
+熟悉Mysql等关系型数据库,熟悉一些常用的数据库性能优化方法
+熟悉Redis,ElasticSearch等非关系型数据库
+熟悉SpringMVC,Spring,SpringBoot,SpringCloud,Mybatis等框架
+掌握Dubbo+Zookeeper等分布式框架
+掌握消息队列,RabbitMQ,Kafka等消息中间件
+掌握JavaScript,AJAX,VUE等前端技能的基本使用
+工作经历
+绿盟科技 2019年5月 - 至今
+后台研发实习生 ICS部门 西安
+绿盟工业网络安全监测预警平台INSP
+  INSP平台负责将工业场景中的网关,防火墙,交换机,审计等设备接入平台进行资产管理,同时使用收集日志信息,对日志进行过滤,
+提取有价值字段, 进行检索,对日志进行量化分析,预防系统被入侵破坏,
+  实习期间负责绿盟工业网络安全监测预警平台INSP平台设备管理模块和日志接入模块等
+INSP会接入网关,审计,防火墙等设备,对设备状态,cpu,内存等信息在平台展示 
+日志接入模块,将网关,防火墙等设备日志接入平台,用kafka日志接收,然后存储到elasticsearch中,并通过elasticsearch对日志 进行全
+文检索
+技术栈:Spring,Mybatis,Redis,Dubbo,Zookeeper,Postgresql,ElasticSearch,Kafka
+教育经历
+西安理工大学高科学院 2016年9月 - 2020年6月
+软件工程 本科 西安
+在校期间担任学校学生工作室,网络部部长一职                                                                                   
+开源项目及作品
+书籍秒杀项目 2018年3月 - 2018年5月
+后台开发 西安
+该项目是一个针对书籍的定期的秒杀项目
+技术栈有:Springboot,Redis,Rabbitmq,Mybatis,Mysql
+使用Redis将热点数据做缓存
+加入消息队列RabbitMQ，对秒杀接口进行优化
+项目地址:https://github.com/FanBopeng/bookseckill
+校园技术论坛 2018年7月 - 2018年12月
+后台开发 西安
+ 
+该项目类似于牛客网的社交论坛平台,用户可以在平台中发表文章,进行技术交流,也可以进行交友,本项目采用前后端分离的系统
+架构
+技术栈有:SpringBoot,Spring Data Jpa,Redis,RabbtitMQ,ElasticSearch,阿里云通信等
+项目原本使用SpringBoot+SpringData构建,为了提高性能,将项目拆分为几个模块(登录模块,搜索模块,文章模块,用户模块等),为
+了完成模块之间的调用所以进入了Spring Cloud来进行模块之间的调用
+项目中有些数据原本保存在数据库中,但是需要频繁的读写,对数据库的性能造成了极大的影响,为了减轻数据库的压力,项目后期
+引入了Redis做缓存,将那些操作频繁的数据(比如文章的浏览量,点赞数等)保存在Redis中,减轻数据库的IO压力
+使用RabbitMQ进行服务之间的调用,通过阿里云通信进行验证码发送完成注册功能
+由于前期对于文章的检索是在数据库中做了许多模糊查询,在服务器有压力的时候,性能较慢,长时间不能给前端响应,并且用户反
+映通过关键字很难检索到他们喜欢的文章并且所以引进ElasticSearch来做项目中文章的检索
+项目地址:https://github.com/FanBopeng/forum

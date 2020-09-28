@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/vuejs/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+</div>
+<div id="app1">
+    <h2>message</h2>
+    <p>{{ school}}</p>
+    <ul>
+        <li>{{tel[0]}}</li>
+        <li>{{tel[1]}}</li>
+    </ul>
+</div>
+
+<div id="app2" v-html="content">
+
+</div>
+
+<div id="app3">
+<!--    <input type="button" value="v-on" @click="dolt">-->
+    <input type="button" value="@" v-on:click="dolt">
+</div>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            message:"tcp666"
+        }
+    })
+    var app1=new Vue({
+        el:"#app1",
+        data:{
+            message:"tcp6666666666",
+            school:"西安邮电大学",
+            tel:[17609184675,15991876441]
+        }
+    })
+
+    var app2=new Vue({
+        el:"#app2",
+        data:{
+            content:"<a href='https://www.baidu.com/'>hello,world</a>"
+        }
+    })
+
+var app3=new Vue({
+    el:"#app3",
+    methods:{
+        dolt:function () {
+            alert("hello,world")
+        }
+    }
+})
+</script>
+</body>
+</html>

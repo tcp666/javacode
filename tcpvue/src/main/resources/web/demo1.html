@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vuejs/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+   {{msg}}
+    <div v-text="msg"></div>
+    <div v-html="msg1"></div>
+    <div v-pre>{{msg}}</div>
+    <button @click='say($event)'>sya </button>
+</div>
+
+<script>
+    //指令
+let app=new Vue({
+    el:'#app',
+    data:{
+        msg:'hello,world',
+        msg1:'<h1>Html5</h1>'
+    },
+    methods:{
+        say:function (obj) {
+            console.log(obj.target.innerHTML);
+        }
+    }
+})
+
+</script>
+</body>
+</html>

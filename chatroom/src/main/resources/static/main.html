@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基于meiziui的仿微信pc端</title>
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="box">
+			<div class="wechat">
+				<!--左侧栏-->
+				<div class="sidestrip">
+					<div class="am-dropdown" data-am-dropdown>
+						<!--头像插件-->
+						<div class="own_head am-dropdown-toggle"></div>
+						<div class="am-dropdown-content">
+					    	<div class="own_head_top">
+					    		<div class="own_head_top_text">
+					    			<p class="own_name" id="username">彭于晏丶plus<img src="images/icon/head.png" alt="" /></p>
+					    			<p class="own_numb">微信号：jsk8787682</p>
+					    		</div>
+					    		<img src="images/own_head.jpg" alt="" />
+					    	</div>
+
+					  	</div>
+					</div>
+					<!--图标-->
+				  	<div class="sidestrip_icon">
+				  		<a id="si_2" style="background: url(images/icon/head_3_1.png) no-repeat;"></a>
+				  	</div>
+
+				</div>
+
+			    <!--好友列表-->
+				<div class="middle on">
+					<div class="wx_search">
+						<input type="text" placeholder="搜索"/>
+						<button>+</button>
+					</div>
+					<div class="office_text">
+						<ul class="friends_list">
+							<li>
+								<p>在线成员列表</p>
+								<div id="users"></div>
+							</li>
+							<li>
+								<p>群聊列表</p>
+								<div id="group">
+								</div>
+							</li>
+						</ul>
+					</div>	
+				</div>
+
+				<!--聊天窗口-->
+				<div class="talk_window">
+					<div class="windows_top">
+						<div class="windows_top_box">
+							<span id="sendtoname"></span>
+							<ul class="window_icon">
+								<li><a href=""><img src="images/icon/icon8.png"/></a></li>
+								<li><a href=""><img src="images/icon/icon9.png"/></a></li>
+								<li><a href="javascript:exit()"><img src="images/icon/icon10.png"/></a></li>
+							</ul>
+							<div class="extend" class="am-btn am-btn-success" data-am-offcanvas="{target: '#doc-oc-demo3'}"></div>
+						</div>
+					</div>
+					
+					<!--聊天内容-->
+					<div class="windows_body">
+						<div class="office_text" style="height: 100%;">
+							<ul class="content" id="chatbox">
+<!--								<li class="me"><img src="images/own_head.jpg" title="金少凯"><span>疾风知劲草，板荡识诚臣</span></li>-->
+<!--								<li class="other"><img src="images/head/15.jpg" title="张文超"><span>勇夫安知义，智者必怀仁</span></li>-->
+							</ul>
+						</div>
+					</div>
+					
+					<div class="windows_input" id="talkbox">
+						<div class="input_icon">
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+							<a href="javascript:;"></a>
+						</div>
+						<div class="input_box">
+							<textarea name="" rows="" cols="" id="input_box"></textarea>
+							<button id="send">发送（S）</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/amazeui.min.js"></script>
+	<script type="text/javascript" src="js/zUI.js"></script>
+	<script type="text/javascript" src="js/wechat.js"></script>
+	<script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+	
+	<script type="text/javascript">
+		//三图标
+		//登录的人的信息
+		var info="";
+		//聊天的内容
+		var chatmessage="";
+		//要把信息发送的目标
+		var sento="";
+		var chatms2="";
+		window.onload=function(){
+			function link() {
+				//获取登录用户名称
+				$.ajax({
+					url:"/userInfo",//发送在线人数给所有客户端
+					type:"post",
+					dataType:"json",
+					success:function(data){
+						console.log(data);
+						info=data.info;
+						console.log(info)
+					}
+				});
+				// console.log("--socket2--");
+				//连接ws
+				var socket = new SockJS('/chat');
+				stompClient = Stomp.over(socket);
+				stompClient.connect({}, function (frame) {
+					//订阅-------获取在线人数
+					//后台给这个订阅点发送消息，此处来接受后台template.convertAndSend("/topic/userList",allUser);发送的消息
+					stompClient.subscribe('/topic/userList', function (data) {
+						console.log(data.body);
+						console.log("websocket");
+						//data.body是所有登录的用户名称的字符串，a方法把字符串解析并显示的相应位置
+						a(data.body);
+						// initOnLine(data.body)
+					});
+					//訂閲  聊天的消息，發給我
+					// stompClient.subscribe('/user/'+info+"/chat", function (data) {
+					// 	// var ms = data.body;
+					// 	// ms = ms.split(",");
+					// 	// chattouser(ms[0]);
+					// 	// console.log(ms);
+					// 	// if (ms[1] != sento){
+					// 	// 	$("#"+ms[1]).append("<span style=\"float: right;color: red\" >有新消息</span>");
+					// 	// 	chatms2 = ms[0];
+					// 	// }else {
+					// 	// 	chattouser(ms[0])
+					// 	// }
+					// });
+
+					// 发送一个请求给所有客户端，用来更新所有客户端显示的在线人数的信息
+					//与134行建立起来的连接配套使用
+					$.ajax({
+						url:"/userList",//发送在线人数给所有客户端
+						type:"post",
+						dataType:"json",
+						success:function(data){
+						}
+					//
+					})
+				});
+			}
+
+
+			function b(){
+				//处理聊天窗口
+				var text = document.getElementById('input_box');
+				var chat = document.getElementById('chatbox');
+				var btn = document.getElementById('send');
+				var talk = document.getElementById('talkbox');
+				//发送按钮的点击事件，可发信息在id为chatbox处显示
+				btn.onclick=function(){
+					if(text.value ==''){
+			            alert('不能发送空消息');
+			        }else{
+						chatmessage = text.value;
+						chat.innerHTML += "<li class=\"me\"><img src=\"images/head/user.jpg\"><span id=\"chst\">"+text.value+"</span></li>";
+						text.value = '';
+						chat.scrollTop=chat.scrollHeight;
+						talk.style.background="#fff";
+						text.style.background="#fff";
+					};
+				};
+			};
+			link();
+			b();
+
+
+		};
+
+		function a(users) {
+			// var users2 = ["wf","gx","123"];
+			users = users.split(",");
+			console.log(users);
+			$("#users").html("");
+			$.each(users,function (i, v) {
+				// console.log(v != info)
+				if (v != info){
+					//循环来逐个显示登录用户信息存在一个点击事件，在243行左右
+					$("#users").append("<div class=\"friends_box\"  onclick=\"javascript:sentuser(this)\">\n" +
+							"<div class=\"user_head\" ><img src=\"images/head/user.jpg\"/></div>\n" +
+							"<div class=\"friends_text\" >\n" +
+							"<p class=\"user_name\" id=\""+v+"\">"+v+"</p>\n" +
+							"</div>\n" +
+							"</div>")
+				}
+			});
+			//可以通过后台进行持久化，
+			var data = ["聊天室用户群","Java交流群"];
+			$("#group").html("");
+			$.each(data,function (i, v) {
+				$("#group").append("<div class=\"friends_box\"  onclick=\"javascript:sentgroup(this)\">\n" +
+						"<div class=\"user_head\" ><img src=\"images/head/group.jpg\"/></div>\n" +
+						"<div class=\"friends_text\" >\n" +
+						"<p class=\"user_name\" id=\""+v+"\">"+v+"</p>\n" +
+						"</div>\n" +
+						"</div>")
+			});
+			$("#username").html(info);
+		}
+
+		//更改聊天窗口最上方和谁或哪个群组的名称60行id为sendtoname和20行处id为username的信息
+		function rename(name) {
+			$("#sendtoname").html(name);
+			console.log(info + "  rename");
+			$("#username").html(info);
+			sento=name;
+			// if (chatms2.length > 0){
+			// 	chattouser(chatms2);
+			// 	chatms2="";
+			// }
+
+		}
+
+		//给个人发信息。sendto是那一行的对象用来获取发送消息的人
+		function sentuser(sendto) {
+			var name = sendto.innerText;
+			name = name.split("\n");
+			rename(name[0]);
+			$("#chatbox").html("");
+			//进行socket连接
+			sendToname = sendto.innerText;
+			//建立socket连接
+			var socket = new SockJS('/chat');
+			stompClient = Stomp.over(socket);
+			stompClient.connect({}, function (frame) {
+				//此处每一个用户都有一个info故只能点对点通信
+				stompClient.subscribe('/user/' +info+"/chat", function (data) {
+					var ms = data.body;
+					ms = ms.split(",");
+					chattouser(ms[0]);
+				});
+			});
+			$("#send").click(function () {
+				$.ajax({
+					url: "/chat",//发送在线人数给所有客户端
+					type: "post",
+					data:'message='+chatmessage+'&username='+sendToname,
+					dataType: "json",
+					success: function (data) {
+					}
+				});
+			});
+		}
+
+		//给群组发信息
+		function sentgroup(sendto) {
+			var name = sendto.innerText;
+			name = name.split("\n");
+			rename(name[0]);
+			$("#chatbox").html("");
+			// sento = name[0];
+			//进行socket连接
+			sendToname = sendto.innerText;
+			var socket = new SockJS('/chat');
+			stompClient = Stomp.over(socket);
+			stompClient.connect({}, function (frame) {
+				//訂閲  聊天的消息，發給我
+				//sendToname是固定信息所以可以群聊
+				stompClient.subscribe('/user/' +sendToname+"/chat", function (data) {
+					var ms = data.body;
+					ms = ms.split(",");
+					if (ms[1] != info){
+						chattouser(ms[0]);
+					}
+				});
+
+			});
+			//进行聊天
+			$("#send").click(function () {
+				$.ajax({
+					url: "/chat",//发送在线人数给所有客户端
+					type: "post",
+					data:'message='+chatmessage+'&username='+sendToname,
+					dataType: "json",
+					success: function (data) {
+
+					}
+				});
+			});
+		}
+		function chattouser(msg) {
+			var chat = document.getElementById('chatbox');
+			chat.innerHTML += "<li class=\"other\">wf<img src=\"images/head/user.jpg\"><span id=\"chst\">"+msg+"</span></li>";
+		}
+	</script>
+	</body>
+</html>

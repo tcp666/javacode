@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7597fd08-9ea0-4c63-bb66-85438a0da700" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\repository" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VQbwi3hGFc7nEOLWlBAAJzK49Q" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/gitdemos" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.GetQRCode">
+    <configuration name="FaceRecognition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tcp.tomcat.FaceRecognition" />
+      <module name="TcpTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcp.tomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetQRCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tcp.getcode.GetQRCode" />
+      <module name="TcpTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcp.getcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MytomCatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tcp.MytomCatServer" />
+      <module name="TcpTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcp.getcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reply.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TcpTomcat/com/tcp/tomcat/reply.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GetQRCode" />
+        <item itemvalue="JavaScript Debug.reply.html" />
+        <item itemvalue="Application.FaceRecognition" />
+        <item itemvalue="Application.MytomCatServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7597fd08-9ea0-4c63-bb66-85438a0da700" name="Default Changelist" comment="" />
+      <created>1577188505895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577188505895</updated>
+      <workItem from="1577188508195" duration="3177000" />
+      <workItem from="1577244937369" duration="2090000" />
+      <workItem from="1577353445012" duration="10000" />
+      <workItem from="1577621742348" duration="2863000" />
+      <workItem from="1577669001825" duration="187000" />
+      <workItem from="1577714400139" duration="1841000" />
+      <workItem from="1577759677350" duration="760000" />
+      <workItem from="1577880784382" duration="3156000" />
+      <workItem from="1577926332326" duration="9000" />
+      <workItem from="1578132036789" duration="3751000" />
+      <workItem from="1578217835832" duration="12000" />
+      <workItem from="1578305558132" duration="2000" />
+      <workItem from="1580018973986" duration="90000" />
+      <workItem from="1580022289422" duration="72000" />
+      <workItem from="1580827719445" duration="102000" />
+      <workItem from="1580889525931" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

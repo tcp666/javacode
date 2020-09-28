@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ws=new WebSocket("ws://localhost:8080/chatdemo/chat");
+    ws.onopen=function () {
+        var data={
+            comname:"tcp",
+            message:"this is come from liming",
+            toname:"liming"
+        }
+        ws.send(JSON.stringify(data));
+        alert(data+":")
+}
+
+    ws.onmessage=function (ev) {
+        alert(ev.data.toString());
+    }
+
+
+
+</script>
+</body>
+</html>

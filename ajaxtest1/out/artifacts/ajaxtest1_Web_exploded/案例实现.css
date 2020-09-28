@@ -1,0 +1,15 @@
+#div1{
+    border: 5px solid gray;
+    width: 60%;
+    height: 600px;
+}
+
+#h001{
+    font-size: 30px;
+    color: #3164af;
+}
+     #bt001{
+         width: 100px;
+         height: 40px;
+         background-color: red;
+     }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        //1,定义基本格式
+
+        var person = {"name": "lijie", "age": 23, gender: true};
+            var name=person.name;
+            // alert(name);
+        // alert(person);
+        //  2，嵌套格式
+        var persons = {
+            persons:
+                [
+                    {name: "lijie", age: 23, gender: true},
+                    {name: "lhuhuu", age: 23, gender: true},
+                    {name: "rose", age: 24, gender: false},
+                    {name: "root", age: 29, gender: true}
+                ]
+        };
+var name1=persons.persons[2].name;
+alert(name1);
+        // alert(persons+"*********");
+
+        // 3,嵌套
+        var ps = [
+            {name: "lijie", age: 23, gender: true},
+            {name: "lijie", age: 23, gender: true},
+            {name: "rose", age: 24, gender: false},
+            {name: "root", age: 29, gender: true}
+        ];
+        // alert(ps+"$$$$$$$$$$$$$$")
+alert(ps[1].name);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

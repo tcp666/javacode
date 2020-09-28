@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .room{
+            margin: 0 auto;
+            width: 500px;
+            height: 800px;
+        }
+        .room>#username{
+            width: 200px;
+            height: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+        .room>.chatroom{
+            width: 100%;
+            height: 600px;
+            float: left;
+        }
+        .chatroom>ul{
+            width: 100%;
+            height: 500px;
+            font-style: normal;
+            display: block;
+            margin: 0 0;
+            background-color: lightskyblue;;
+            overflow: auto;
+        }
+        ul>li{
+            width: 100%;
+            height: auto;
+            display: block;
+            float: left;
+            color: red;
+            word-wrap:break-word;
+            word-break: break-all;
+            font-style: normal;
+
+        }
+
+        .chatroom>#mess{
+            width: 80%;
+            height: 45px;
+            display: block;
+            box-sizing: border-box;
+            font-style: normal;
+            float: left;
+        }
+        .chatroom>#send{
+            width: 19%;
+            height: 45px;
+            display: block;
+            box-sizing: border-box;
+            font-style: normal;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="room">
+    <input type="text" id="username" onblur="connect()" placeholder="请在这里设置你的昵称">
+    <div class="chatroom">
+        <ul id="messages"></ul>
+        <input type="text" id="mess" onkeydown="send()">
+        <input type="button" value="send" onkeydown="send()" id="send">
+
+    </div>
+</div>
+
+<script>
+
+
+    var ws=null;
+    function connect(){
+        var un=document.getElementById("username").value;
+        if (ws!=null)
+            ws.onclose();
+        ws=new WebSocket("ws:localhost//chat_war_exploded/chat/"+un);
+        // alert("hhhe")
+        ws.onopen=function () {
+            console.log("...............")
+        }
+        ws.onmessage=function (msg) {
+
+            var messages= document.getElementById("messages");
+            messages.scrollTop=messages.scrollHeight;
+            // alert(ev.data)
+            document.getElementById("messages").innerHTML+="<li>"+msg.data+"</li>";
+            ws.send(msg.data)
+
+
+    }
+
+    ws.onclose=function () {
+        console.log("...........")
+    }
+
+
+    function send(e) {
+        var theEvent = window.event || e;
+        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code == 13) {
+
+        var mess=document.getElementById('mess');
+        // alert(mess.value)
+        ws.send(mess.value);
+        mess.value="";
+        }
+    }
+</script>
+
+
+</body>
+</html>

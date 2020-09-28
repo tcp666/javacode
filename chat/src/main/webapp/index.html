@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .room{
+        width: 600px;
+        height: 800px;
+
+    }
+    .room>.messages{
+        width: 100%;
+        height: 90%;
+        display: block;
+        float: left;
+    }
+    .room>.fun{
+        width: 100%;
+        height: 10%;
+        display: block;
+        float: left;
+    }
+    .fun>.file{
+        width: 80%;
+        height: 100%;
+        box-sizing: border-box;
+        font-style: normal;
+        display: block;
+        float: left;
+    }
+    .fun>#send{
+        display: block;
+        float: left;
+        width: 10%;
+        height: 100%;
+    }
+</style>
+
+<div class="room">
+    <ul class="messages"></ul>
+    <div class="fun">
+        <input type="file" multiple class="file" id="file">
+        <input type="button" id="send" onclick="send()">
+    </div>
+</div>
+</body>
+
+
+<script>
+    var ws=null;
+    onload=function (ev) {
+       ws=new WebSocket("ws:localhost//chat_war_exploded/file/"+123)
+        ws.onopen=function (ev1) {
+            console.log("connectino....")
+        }
+        ws.onmessage=function (ev1) {
+           console.log(ev1.data.type)
+        }
+
+    }
+    function send() {
+
+        ws.send(212332);
+    }
+
+
+</script>
+</html>

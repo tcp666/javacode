@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--把对象交给spring管理 -->
+<!--    spring对bean的管理细节
+        1，创建bean的三种方式
+        2，bean对象的作用范围
+        3，bean的生命周期
+
+
+-->
+<!--    1，创建bean的三种方式-->
+<!--    第一种方式
+    1使用默认构造函数创建
+    只有id和class
+-->
+<!--    使用方法创建对象-->
+<!--    <bean id="instanceFactory" class="com.itheima.factory.InstanceFactory"></bean>-->
+<!--   -->
+
+<!--    bean的作用范围调整
+        bean标签的scope的作用范围
+        取值：
+        singleton:单例
+        prototype:多例的
+        request：作用域web的request
+        session:作用域web应用的会话环境
+        global-session:
+-->
+
+<!--
+    bean对象的生命周期：
+    单例：
+    出生：当容器创建时出生
+    活着：容器活着时，对象一直活着
+    死亡：容器销毁，对象消亡
+    总结，单例周期的生命周期和容器相同
+
+    多例  ：
+    出生：当容器创建时出生
+    活着：容器活着时，对象一直活着
+    死亡：容器销毁，对象消亡
+    总结，单例周期的生命周期和容器相同
+-->
+    <bean id="accountService" class="com.itheima.service.imp.AccountServiceImp" scope="prototype" init-method="init" destroy-method="destroy"></bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </beans>

@@ -1,0 +1,251 @@
+Linux高级编程技术
+   1，发展：
+        最开始：Linus Torvalds
+        Minix
+        类Uninix操作系统
+        自由软件(Free Software)：
+        GNU:
+            GNU是一个自由的操作系统，其内容软件完全以GPL方式发布。这个操作系统是GNU计划的主要目标，名称来自GNU's Not Unix!的递归缩写，因为GNU的设计类似Unix，但它不包含具著作权的Unix代码。GNU的创始人，理查德·马修·斯托曼，将GNU视为“达成社会目的技术方法”。
+            作为操作系统，GNU的发展仍未完成，其中最大的问题是具有完备功能的内核尚未被开发成功。GNU的内核，称为Hurd，是自由软件基金会发展的重点，但是其发展尚未成熟。在实际使用上，多半使用Linux内核、FreeBSD等替代方案，作为系统核心，其中主要的操作系统是Linux的发行版。Linux操作系统包涵了Linux内核与其他自由软件项目中的GNU组件和软件，可以被称为GNU/Linux（见GNU/Linux命名争议）。
+            GPL:公共许可协议(General Public License)
+                Mysql,JDK,Tomcat等等
+            权力和义务：
+
+        POSIX:Portable Operating System Interface
+                可移植操作系统接口(一套接口标准)
+        由IEEE制定
+        ANSI C 标准
+
+
+        系统编程：
+        知道内核提供哪些服务并如何使用它们
+        资源和设备
+        **************************88
+        了解内核提供的各种服务，系统调用
+        服务特点，参数
+        会提供哪些数据（数据结构，函数参数，返回值）
+        服务机制（IPC）
+        在自己程序中使用这些服务
+        资源：
+            处理器:安排一个程序何时开始执行，何时暂停、恢复
+            处理器:安排一个程序何时开始执行，何时暂停、恢复 2，
+            I/O:程序、终端、存储设备中所有的I/O数据都必须
+            流经内核，以保证I/O数据的正确性、有效性和安全性。
+
+            进程间通信：
+                不同的进程之间需要通信
+                内核为其通信提供服务
+
+                网络：
+                    特殊的进程间通信
+            ***********************************
+如果设定man命令格式为：man 选项 参数的话，当总结出实现功能的关键词keyword，想要查找相关系统调用或库函数的信息时，可使用命令________。
+
+man -k keyword(2)null
+文件描述符：
+    main( ){
+        FILE *fp;
+        char filename[10];
+
+        printf(“please input the file name:" );
+
+        scanf(“%s”,filename);
+        fp=fopen(filename,“r”);
+        fclose(fp);
+    }
+文件描述符
+    POSIX标准下，每个打开的文件都对应一个唯一的非
+    负整数，即文件描述符
+    流对象stdin、stdout、 stderr对 应的文件描述符: 0、1、2
+    之后打开的文件描述符的值一般选用未使用的最小值
+    流对象和文件描述符是可以相互转换的
+
+    Linux系统为用户提供了函数fleno从流对象中读
+    取文件描述符
+    同时也提供了函数fdopen将一个文件描述符封
+    装为文件流。
+    #include <stdio.h>
+    #include <fcntl.h>
+    #include <sys/stat.h>
+    main( )
+    {
+        int fd;
+        FILE *st ream;
+        fd=open("test. txt",0 CREAT|O WRONLY ,S_ IREAD|S IWRITE) ;
+        st ream=fdopen(fd, "w") ;
+        if ( stream==NULL )
+            printf("fdopen failed\n") ;
+        else
+        {
+            fprintf(stream, "This is to test fdopen.\n");
+            fclose (gtream) ;
+        }
+            printf(" return value=%d\n" ,close(fd)) ;
+            return 0;
+    }
+open函数的lags
+flags
+说明
+0_RDONLY
+只读方式打开文件
+0_WRONLY
+只写方式打开文件
+0_RDWR
+可读可写方式打开文件
+0_CREAT
+不存在则自动建立该文件
+0_EXCL
+O_CREAT需同时设置，若文件不存在则
+建立此文件，否则返回错误
+0 TRUNC
+若文件存在并且以可写的方式打开时，此
+标识令文件长度为0
+0_APPEND
+读入/写入的数据会以附加的方式加入到
+文件后面
+关于open的说明
+mode表示新建文件时，给新文件赋予什么样的访问
+权限
+,”
+例如: open(“
+test”,O_ CREAT|O_ _WRONLY, 0644);
+若test不存在则新建文件test，其存取权限为-rw-t--
+-。
+
+
+
+creat
+    功能
+    创建/清空一个文件
+    头文件
+    /ust/include/ fcntl.h
+    函数原型int creat(const char *pathname, mode_ _t mode);
+    pathname
+    文件名
+    参数
+    mode
+    文件存取权限
+    返回值
+    文件描述符
+    成功
+    -1
+    失败
+read
+    功能
+    将数据读取到缓冲区
+    头文件
+    /ust/ include/ unistd.h
+    函数原型
+    int read(int fd, void *buf, size_ _t count);
+    fd
+    文件描述符
+    参数
+    buf
+    目的缓冲区地址
+    count
+    要读取的字节数
+    >0
+    成功读取的字节数
+    返回值
+    0
+    遇文件结束
+    -1
+    失败
+write
+    功能
+    将内存中的数据写入文件
+    头文件
+    /ust/include/ unistd.h
+    函数原型
+    int write(int fd, void *buf, size_ _t count);
+    fd
+    文件描述符
+    参数
+    buf
+    存储数据的内存地址
+    count
+    要写入的字节数
+    >0
+    成功写入的字节数
+    返回值
+    -1
+    失败
+close
+    功能
+    关闭一个文件
+    头文件
+    /usr/ include/ unistd.h
+    函数原型
+    int close(int fd);
+    参数
+    fd
+    文件描述符
+    0
+    成功关闭
+    返回值
+    -1
+    遇到错误
+    #include <stdio. h>
+    #include <stdlib.h>
+    #include <fcntl. h>
+    #define BUFSIZE
+    1024
+    main(int argc, char * argv[ ] )
+    {
+    int fd_ s,fd_ t;
+    char buf [BUFSIZE] ;
+    int num;
+    if(argc!=3)
+    {
+    printf("the format must be: cp file src file des
+    ");
+    exit(EXIT_ FAILURE) ;
+    }
+    if((fd_ s=open(argv[1] ,0 RDONLY) )==-1)
+    {
+    perror ("open source file") ;
+    exit(EXIT_ FAILURE) ;
+    }
+    if((fd_ t=creat(argv[2] , 0644) )==-1)
+    {
+    perror(" open2") ;
+    exit(EXIT FAILURE) ;
+    }
+    while( (num=read(fd_ s,buf , BUFSIZE) )>0)
+    if (write(fd t, buf ,num)==-1)
+    {
+    perror( "write") ;
+    exit(EXIT FAILURE) ;
+    }
+    if(num==- 1)
+    {
+    perror(" read" ) ;
+    exit(EXIT_ FAILURE) ;
+    }
+    if(close(fd_ s)==-1||close(fd_ t)==-1)
+    {
+    perror("close") ;
+    exit(EXIT FAILURE) ;
+    }
+    }
+    ●当查找的关键词项目较多时，可以利用grep增加一
+        个关键词，来辅助man命令的查找，从而缩小结果
+        的范围。
+        例如: man 一k file
+        grep read
+        通过man的帮助，开源系统中的绝大多数命令我们
+        都可以自行实现。
+2.5.1文件类型
+    Linux系统下，一切皆文件
+    文件分为七类
+    d目录文件
+    l符号链接(指向另一个文件)
+    s套接字文件
+    b块设备文件
+    c字符设备文件
+    p命名管道文件
+    -普通文件
+
+
+2.5.2文件存取权限和特殊属性位
+rwxrwXr-X 1 hr hr

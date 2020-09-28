@@ -1,0 +1,4 @@
+1. Hello.你好！  
+2. Good morning.早晨好！  
+3. I’m John Smith.我是约翰、史密斯。  
+4. Are you Bill Jones?你是比尔、琼斯吗？  

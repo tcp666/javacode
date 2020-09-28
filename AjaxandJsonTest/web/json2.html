@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var person = {"name": "张三", "age": 23, "gender": "男"}
+
+
+        var ps = [{"name": "张3", "age": 24, "gender": "男"},
+            {"name": "张1", "age": 25, "gender": "男"},
+            {"name": "张2", "age": 26, "gender": "男"}];
+
+        // // 获取所有键，值
+        // for (var key in person){
+        //     alert(key+":"+person[key]);
+        // }
+        // 获取ps
+
+        for (var i=0;i<ps.length;i++){
+            var p=ps[i];
+            for (var key in p){
+                     alert(key+":"+person[key]);
+                 }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

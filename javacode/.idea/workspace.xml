@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b170329-7a60-4efe-a7f8-dfa8c50124d4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="demo_01@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="javacode" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\repository" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VCv0yqwqnXbbVOBYMtRm45Y6mb" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/junit/src/main/java/bianlifeng" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.splitter.proportion" value="0.2792584" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gui" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SpringDemos\javacode\junit\src\main\java\bianlifeng" />
+      <recent name="D:\SpringDemos\javacode\junit\src\main\java\gui" />
+      <recent name="D:\SpringDemos\javacode\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SpringDemos\javacode\junit\src\main\java\weather" />
+      <recent name="D:\SpringDemos\javacode\junit\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main4">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kedaxunfei.Main" />
+      <module name="javacode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kedaxunfei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kedaxunfei.Main1" />
+      <module name="javacode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kedaxunfei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kedaxunfei.Main3" />
+      <module name="javacode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kedaxunfei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kedaxunfei.Main4" />
+      <module name="javacode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kedaxunfei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sogo.Solution" />
+      <module name="javacode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sogo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main1" />
+      <item itemvalue="Application.Main3" />
+      <item itemvalue="Application.Main4" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main4" />
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.Main1" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Solution" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.030100334" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5fd12a0d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b170329-7a60-4efe-a7f8-dfa8c50124d4" name="Default Changelist" comment="" />
+      <created>1576769671789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576769671789</updated>
+      <workItem from="1576769673494" duration="3090000" />
+      <workItem from="1576808182775" duration="198000" />
+      <workItem from="1576808882571" duration="1284000" />
+      <workItem from="1576816746145" duration="5000" />
+      <workItem from="1576999623140" duration="5000" />
+      <workItem from="1577621235964" duration="495000" />
+      <workItem from="1577668713002" duration="279000" />
+      <workItem from="1577669192058" duration="3486000" />
+      <workItem from="1578923337599" duration="651000" />
+      <workItem from="1580018891732" duration="24000" />
+      <workItem from="1580022407415" duration="69000" />
+      <workItem from="1580199241663" duration="747000" />
+      <workItem from="1580452807635" duration="204000" />
+      <workItem from="1580573925369" duration="868000" />
+      <workItem from="1580622024595" duration="515000" />
+      <workItem from="1580917748819" duration="562000" />
+      <workItem from="1580968778006" duration="9000" />
+      <workItem from="1580970761766" duration="1844000" />
+      <workItem from="1581950902337" duration="1236000" />
+      <workItem from="1582342654818" duration="71000" />
+      <workItem from="1582513927741" duration="208000" />
+      <workItem from="1582514298590" duration="2981000" />
+      <workItem from="1582528007550" duration="3069000" />
+      <workItem from="1582612609742" duration="5071000" />
+      <workItem from="1582792206114" duration="3959000" />
+      <workItem from="1582847879401" duration="631000" />
+      <workItem from="1583070360193" duration="33000" />
+      <workItem from="1583114993374" duration="17153000" />
+      <workItem from="1583281047961" duration="52000" />
+      <workItem from="1583281148115" duration="6402000" />
+      <workItem from="1583368403476" duration="16973000" />
+      <workItem from="1583646890430" duration="3781000" />
+      <workItem from="1583720169378" duration="5917000" />
+      <workItem from="1583885014081" duration="2348000" />
+      <workItem from="1583980021822" duration="3030000" />
+      <workItem from="1583994985602" duration="15000" />
+      <workItem from="1584002174731" duration="1283000" />
+      <workItem from="1584072053891" duration="1706000" />
+      <workItem from="1584081523550" duration="1779000" />
+      <workItem from="1584403431734" duration="3721000" />
+      <workItem from="1584514327568" duration="40000" />
+      <workItem from="1584610820351" duration="12018000" />
+      <workItem from="1584930446628" duration="1055000" />
+      <workItem from="1584933657224" duration="1534000" />
+      <workItem from="1584946683365" duration="2302000" />
+      <workItem from="1585030836927" duration="2055000" />
+      <workItem from="1585101740873" duration="9600000" />
+      <workItem from="1585202073849" duration="2349000" />
+      <workItem from="1585204474836" duration="10224000" />
+      <workItem from="1585465134605" duration="1058000" />
+      <workItem from="1585533300151" duration="1844000" />
+      <workItem from="1585704581874" duration="4338000" />
+      <workItem from="1586415277465" duration="4298000" />
+      <workItem from="1586420390785" duration="659000" />
+      <workItem from="1586933509431" duration="999000" />
+      <workItem from="1586996679870" duration="1006000" />
+      <workItem from="1587386138103" duration="9000" />
+      <workItem from="1587876113944" duration="17843000" />
+      <workItem from="1588731512308" duration="4088000" />
+      <workItem from="1588909227787" duration="5568000" />
+      <workItem from="1588949010665" duration="1435000" />
+      <workItem from="1588953996616" duration="239000" />
+      <workItem from="1589014447563" duration="62000" />
+      <workItem from="1589034286011" duration="2520000" />
+      <workItem from="1589086268758" duration="2465000" />
+      <workItem from="1589180607567" duration="4264000" />
+      <workItem from="1589416908276" duration="699000" />
+      <workItem from="1589682506949" duration="774000" />
+      <workItem from="1589806466629" duration="5955000" />
+      <workItem from="1589957400918" duration="640000" />
+      <workItem from="1590064584780" duration="3024000" />
+      <workItem from="1590315274663" duration="2755000" />
+      <workItem from="1590318405779" duration="11249000" />
+      <workItem from="1590335465593" duration="395000" />
+      <workItem from="1590336025782" duration="2958000" />
+      <workItem from="1590392736337" duration="2812000" />
+      <workItem from="1590411373635" duration="1230000" />
+      <workItem from="1590452825727" duration="1264000" />
+      <workItem from="1590475180629" duration="6000" />
+      <workItem from="1590496932194" duration="2002000" />
+      <workItem from="1590499024608" duration="673000" />
+      <workItem from="1590545688756" duration="22000" />
+      <workItem from="1590562529555" duration="738000" />
+      <workItem from="1590573004398" duration="15000" />
+      <workItem from="1590584130494" duration="58000" />
+      <workItem from="1590584429651" duration="190000" />
+      <workItem from="1590584685938" duration="8000" />
+      <workItem from="1591581952997" duration="2194000" />
+      <workItem from="1591598665491" duration="446000" />
+      <workItem from="1591599173533" duration="113000" />
+      <workItem from="1591599329083" duration="338000" />
+      <workItem from="1591599691442" duration="2044000" />
+      <workItem from="1591777202312" duration="1174000" />
+      <workItem from="1591858448073" duration="22311000" />
+      <workItem from="1592189097579" duration="8264000" />
+      <workItem from="1592354465744" duration="3346000" />
+      <workItem from="1592475485554" duration="1774000" />
+      <workItem from="1592620746728" duration="3122000" />
+      <workItem from="1592922381628" duration="6970000" />
+      <workItem from="1592967212688" duration="11479000" />
+      <workItem from="1593235974233" duration="1803000" />
+      <workItem from="1593335016685" duration="1988000" />
+      <workItem from="1593500964210" duration="13000" />
+      <workItem from="1593842991527" duration="87118000" />
+      <workItem from="1595238875380" duration="4647000" />
+      <workItem from="1595327618193" duration="25427000" />
+      <workItem from="1595586455112" duration="195000" />
+      <workItem from="1595586714381" duration="21302000" />
+      <workItem from="1596016908526" duration="7490000" />
+      <workItem from="1596027263046" duration="694000" />
+      <workItem from="1596028545848" duration="8965000" />
+      <workItem from="1596188740463" duration="13009000" />
+      <workItem from="1596527525627" duration="159000" />
+      <workItem from="1596543653368" duration="725000" />
+      <workItem from="1596695817234" duration="96977000" />
+      <workItem from="1597037467875" duration="11004000" />
+      <workItem from="1597161597211" duration="4643000" />
+      <workItem from="1597201366825" duration="8154000" />
+      <workItem from="1597372658672" duration="310000" />
+      <workItem from="1598014461344" duration="1183000" />
+      <workItem from="1598019264366" duration="192000" />
+      <workItem from="1598091136607" duration="4000" />
+      <workItem from="1599225843014" duration="4863000" />
+      <workItem from="1599361304671" duration="5192000" />
+      <workItem from="1599533481305" duration="843000" />
+      <workItem from="1599554434931" duration="9323000" />
+      <workItem from="1599617523414" duration="26000" />
+      <workItem from="1599617557411" duration="577000" />
+      <workItem from="1599618159236" duration="175000" />
+      <workItem from="1599618340400" duration="102000" />
+      <workItem from="1599618446276" duration="23483000" />
+      <workItem from="1599810946852" duration="11194000" />
+      <workItem from="1600054445551" duration="3245000" />
+      <workItem from="1600169790212" duration="4263000" />
+      <workItem from="1600252195584" duration="33000" />
+      <workItem from="1600345463179" duration="1900000" />
+      <workItem from="1600419287577" duration="15862000" />
+      <workItem from="1600606877531" duration="14000" />
+      <workItem from="1600606940384" duration="634000" />
+      <workItem from="1600611798217" duration="1861000" />
+      <workItem from="1600654918600" duration="1549000" />
+      <workItem from="1600684586751" duration="3729000" />
+      <workItem from="1600744336103" duration="8097000" />
+      <workItem from="1600860724608" duration="3347000" />
+      <workItem from="1600947069195" duration="2000" />
+      <workItem from="1600947074227" duration="380000" />
+      <workItem from="1600949281803" duration="2192000" />
+      <workItem from="1601012794482" duration="23493000" />
+      <workItem from="1601188961208" duration="3365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>173</line>
+          <properties class="java.lang.System" method="setOut">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>73</line>
+          <properties class="java.lang.System" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>149</line>
+          <properties class="java.lang.System" method="setIn">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>22</line>
+          <properties class="jianzhioffer.linked.LinkedExcer" method="breakfastNumber">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Sogo/Solution.java</url>
+          <line>28</line>
+          <properties class="Sogo.Solution">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/java/jdk1.8/src.zip!/java/lang/System.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarytreedemos/ListNode.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Solution2.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Demo2.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/treeDemo/TreeDemo.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/LinkedExcer.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/Main.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/linked/Main.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>184</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>189</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/jianzhioffer/Arr/Arrdemo.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="332" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="338" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/junit/src/main/java/bianlifeng/Main.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="365" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="366" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="368" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kedaxunfei/Main1.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/javacode$AddToo.ic" NAME="AddToo Coverage Results" MODIFIED="1595501673519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tcp.CAS.*</FILTER>
+    </SUITE>
+  </component>
+</project>

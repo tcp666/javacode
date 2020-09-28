@@ -1,0 +1,15 @@
+<component name="CopyrightManager">
+  <settings>
+    <LanguageOptions name="ActionScript">
+      <option name="fileTypeOverride" value="3" />
+    </LanguageOptions>
+    <LanguageOptions name="JAVA">
+      <option name="fileTypeOverride" value="3" />
+      <option name="relativeBefore" value="false" />
+      <option name="fileLocation" value="3" />
+    </LanguageOptions>
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="relativeBefore" value="false" />
+    </LanguageOptions>
+  </settings>
+</component>

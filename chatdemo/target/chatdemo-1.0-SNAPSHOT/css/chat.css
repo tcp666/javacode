@@ -1,0 +1,92 @@
+* {
+	padding: -1px;
+	margin:-1px;
+	border-collapse: collapse;
+}
+
+.content {
+
+	padding: 1px;
+	width: 30%;
+	height: 800px;
+	position: absolute;
+	left: 35%;
+	position: absolute;
+	top: 1px;
+}
+
+.herder {
+	background: #2cb5fd;
+	border: 1px solid blue;
+	width: 100%;
+	height: 5%;
+
+}
+
+.body {
+	background: lightgray;
+	border: 1px solid red;
+	width: 100%;
+	height: 90%;
+	opacity: 0.5;
+}
+.body:hover {
+	background-image: url("../images/bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	border: 1px solid red;
+	width: 100%;
+	height: 90%;
+	opacity: 1;
+}
+
+.footer {
+	border: 1px solid yellow;
+	width: 100%;
+	height: 5%;
+}
+
+.footer_left {
+	display: flow;
+	border: 1px solid black;
+	width: 90%;
+	height: 100%;
+	float: left;
+}
+
+.message {
+	display: inline-block;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	float: left;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+.footer_right {
+
+	border: 1px solid black;
+	width: 10%;
+	height: 100%;
+	position: relative;
+	left: 90%;
+}
+
+.footer_right .send {
+	border-collapse: collapse;
+	padding: 1px;
+	margin: 0px;
+	display: inline-block;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0%;
+	top: -100%;
+	background: green;
+}
